@@ -1,0 +1,54 @@
+.contenedoresDosStaCieJak {
+  display: grid;
+}
+
+.imagenresponsivaStaCieJak {
+  width: 30%;
+  height: 200px;
+  display: block;
+  margin: auto;
+}
+
+.licenciaStaCieJak {
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contenedoresDosStaCieJak {
+  margin-top: 50px;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.contenedoresDosStaCieJak__hijo1 {
+  text-align: center;
+}
+.contenedoresDosStaCieJak__hijo2 {
+  text-align: center;
+}
+
+.pieDePaginaStaCieJak {
+  margin-top: 50px;
+  display: grid;
+  box-sizing: border-box;
+  grid-template-columns: 60% 10% 30%;
+  justify-content: center;
+  border: 1px solid black;
+}
+.pieDePaginaStaCieJak__hijo1 {
+  border: 1px solid greenyellow;
+}
+.pieDePaginaStaCieJak__hijo1 .canvas1StaCieJak {
+  border: 2px solid red;
+}
+.pieDePaginaStaCieJak__hijo2 {
+  border: 1px solid blue;
+}
+.pieDePaginaStaCieJak__hijo3 {
+  border: 1px solid orange;
+}
+
+/*# sourceMappingURL=sta_cie_jakEj1230120_ej2.css.map */
