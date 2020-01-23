@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Examen 23-01-2020 / StaCieJak / Ej1</title>
+    <link rel="stylesheet" href="estilos/sta_cie_jakEj1230120_ej1.css">
+   <script>
+   function cuentaClicks(){
+                if(typeof(localStorage) !== "undefined") { 
+                    if (sessionStorage.cuentadeclicks) {
+                    
+                    //Si existe el contador, lo incrementamos en 30
+                    
+                    sessionStorage.cuentadeclicks = Number(sessionStorage. cuentadeclicks)+30; 
+                    
+                    //Realizamos conversión a número para evitar problemas. Los datos siempre se almacenan como cadena y requieren conversión. 
+                    
+                    } else { 
+                    // Si no existe el contador, lo creamos 
+                    sessionStorage. cuentadeclicks = 1; 
+                    } 
+                    document.getElementById("elementoAlmacen2").innerHTML = "Has hecho clic en el botón: " + sessionStorage. cuentadeclicks + " veces en esta sesión."; 
+                    } else { 
+                        document.getElementById("elementoAlmacen2").innerHTML = "El navegador no soporta almacenamiento local"; 
+                    }
+            }
+            function cuentaClicks2(){
+                if(typeof(Storage) !== "undefined") { 
+                    if (sessionStorage.cuentadeclicks) {
+                    
+                    //Si existe el contador, lo incrementamos en 7 
+                    
+                    sessionStorage.cuentadeclicks = Number(sessionStorage. cuentadeclicks)+7; 
+                    
+                    //Realizamos conversión a número para evitar problemas. Los datos siempre se almacenan como cadena y requieren conversión. 
+                    
+                    } else { 
+                    // Si no existe el contador, lo creamos 
+                    sessionStorage. cuentadeclicks = 1; 
+                    } 
+                    document.getElementById("elementoAlmacen3").innerHTML = "Has hecho clic en el botón: " + sessionStorage. cuentadeclicks + " veces en esta sesión."; 
+                    } else { 
+                        document.getElementById("elementoAlmacen3").innerHTML = "El navegador no soporta almacenamiento local"; 
+                    }
+            }
+            function reiniciarCancion(identificador) { elementoVideo = document.getElementById(identificador); elementoVideo.currentTime = 0; elementoVideo.play(); }
+   </script>
+</head>
+<body>
+    <h1>Inicio del examen 23-01-2020. Alumno: StaCieJak</h1>
+    <img src="img/Recurso1StaCieJak.png" class="imagenresponsivaStaCieJak" title="Imagen editada por StaCieJak">
+    <div class="licenciaStaCieJak">
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+    <img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" />
+    </a>
+    <p>Se permite la generación de obras derivadas siempre que no se haga uso comercial. Tampoco se puede utilizar la obra original con fines comerciales</p>
+    </div>
+    <div class="contenedorStaCieJak">
+        <div class="StaCieJakContenedor1ConBordeVerde">
+           <picture>
+                <source media="(min-width:500px)" srcset="img/Recurso2StaCieJak.jpg" class="imagen1">
+                <source media="(min-width:400px)" srcset="img/Recurso3StaCieJak.jpg" class="imagen1">
+                <img src="img/Recurso4StaCieJak.jpg" alt="Imagen retrocompatible" style="width: auto;" class="imagen1">
+           </picture>
+         </div>
+        <div class="StaCieJakContenedor2ConBordeAzul">
+            
+            <input onclick="cuentaClicks()" type=image src="img/Recurso5StaCieJak.png" width="100" height="100" > 
+            <div id="elementoAlmacen2" class="claseelementoAlmacen">
+
+            </div>
+        </div>
+    </div>
+    <div class="pieDePaginaStaCieJak">
+        <div class="pieDePaginaStaCieJak__hijo1"> <input onclick="cuentaClicks2()" type=image src="img/Recurso6StaCieJak.png" width="100" height="100" > 
+            <div id="elementoAlmacen3" class="claseelementoAlmacen"></div>
+        </div>
+        <div class="pieDePaginaStaCieJak__hijo2">
+            <audio id="audio1" controls> <source src="audio/Recurso7StaCieJak.mp3" type="audio/mpeg"> 
+                <source src="audio/Recurso7StaCieJak.wav" type="audio/ogg"> 
+                <source src="audio/Recurso7StaCieJak.wav" type="audio/wav"> 
+                    Tu navegador no soporta esta etiqueta HTML5 
+            </audio>
+            <button onclick="reiniciarCancion('audio1')">Reiniciar Cancion</button>
+        </div>
+        <div class="pieDePaginaStaCieJak__hijo3"><a href="">Ejercicio2StaCieJak</a></div>
+    </div>
+</body>
+</html>

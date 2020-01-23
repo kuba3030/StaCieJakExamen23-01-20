@@ -1,0 +1,60 @@
+h1{
+    text-align: center;
+}
+.imagenresponsivaStaCieJak{
+    width: 100%;
+    height: 800px;
+    display: block;
+    margin: auto;
+}
+.licenciaStaCieJak{
+    background-color: #fafafa;
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    text-align: center;
+    font-weight: bold;
+}
+.contenedorStaCieJak{
+    display: flex;
+    
+}
+.StaCieJakContenedor1ConBordeVerde{
+   
+    width: 80%;
+    border: 1px greenyellow solid;
+}
+.StaCieJakContenedor2ConBordeAzul{
+  
+    width: 20%;
+    border:1px blue solid;
+    text-align: center;
+}
+%hijo{
+    background-color: white;
+   text-align: center;
+}
+.pieDePaginaStaCieJak{
+    margin-top: 50px;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 25% 50% 25%;
+    justify-content: center;
+   
+    background-color: gold;
+    
+    &__hijo1{
+        @extend %hijo;
+       
+        
+    }
+    &__hijo2{
+        @extend %hijo;
+      
+        
+    }
+    &__hijo3{
+        @extend %hijo;
+       
+    }
+}
